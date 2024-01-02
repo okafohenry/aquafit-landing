@@ -9,7 +9,7 @@
 main{
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 100px;
+    /* padding-bottom: 50px; */
     margin: 0 auto;
 }
 
@@ -257,8 +257,17 @@ nav .nav-links .login-btn a {
 
 
 
+.reviews-container h3 {
+    /* margin-top: 70px; */
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 50px;
+}
+
 .reviews-container .review-carousel {
-    width: 100%;
+    /* width: 100%; */
     position: relative;
     margin: 2rem auto 0 auto;
     padding-left: 3rem;
@@ -266,18 +275,18 @@ nav .nav-links .login-btn a {
 
 .reviews-container .review-carousel .previous-btn {
     position: absolute;
-    left: 0;
-    top: -8rem;
+    left: -10px;
+    top: 8rem;
 }
 .reviews-container .review-carousel .next-btn {
     position: absolute;
-    right: 0;
+    right: -10px;
     top: 6rem;
 }
 
 .review-card-container {
     border-radius: 14px;
-    background: #2f3948;
+    background: #0087b1;
     max-width: 300px;
     width: 250px;
     min-width: 250px;
@@ -305,15 +314,22 @@ nav .nav-links .login-btn a {
 }
 
 .review-card-container .review-text {
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #ACB5BB;
 }
 
 .review-card-container .rating {
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
+    width: fit-content;
+    padding: 1px 14px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 16px;
+    background-color: rgba(30, 40, 54, 0.6);
+    color: white;
+    font-size: 12px;
 }
 
 
@@ -540,6 +556,10 @@ ul{
         font-size: 27px;
         line-height: 35px;
         width: 90%;
+    }
+
+    .reviews-container .review-carousel .previous-btn, .reviews-container .review-carousel .next-btn {
+       display: none;
     }
 
     footer{
