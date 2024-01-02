@@ -1,14 +1,21 @@
 import aboutImg from '../../assets/imgs/jumbotron-img.png';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 function AboutUs() {
+    useEffect(() => {
+        AOS.init();
+      }, []);
+
     return (
         <section id='about' className="about-us">
-            <h3>About Us</h3>
+            <h3 data-aos='fade-up'>About Us</h3>
             <div className="grid">
-                <div className="left">
+                <div data-aos='fade-right' className="left">
                     <img src={aboutImg} alt="about" />
                 </div>
-                <div className="right">
+                <div data-aos='fade-left' className="right">
                     <p>
                         At Aquafit, we foster a nurturing environment for all ages to learn, thrive, and develop lifelong swimming skills. More than a swim school, we're a community valuing safety, passion, and the joy of swimming.
                     </p>

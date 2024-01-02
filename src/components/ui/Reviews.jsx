@@ -5,7 +5,17 @@ import { reviews } from "../../utils/constants";
 import ReviewCard from "./ReviewCard";
 
 
+
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 function Reviews(){
+
+    useEffect(() => {
+        AOS.init();
+      }, []);
+
     const responsive = {
         0: { items: 1 },
         568: { items: 2 },
@@ -14,7 +24,7 @@ function Reviews(){
 
     return (
         <section id="reviews" className="reviews-container">
-            <h3>Reviews</h3>
+            <h3 data-aos="fade-up">Reviews</h3>
 
             <div data-aos="fade-up" className='review-carousel'>
                 <AliceCarousel

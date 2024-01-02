@@ -10,6 +10,11 @@ import linkedin from "../../assets/imgs/linkedin.svg";
 import youtube from "../../assets/imgs/youtube.svg";
 
 
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+
 const landings = [
     { text: 'Home', route: '', addedText: null },
     { text: 'Products', route: '', addedText: null },
@@ -37,9 +42,13 @@ const social_links = [
 
 
 function Footer(){
+    useEffect(() => {
+        AOS.init();
+      }, []);
+
     return (
         <footer>
-            <div className="bottom-logo">
+            <div data-aos='fade-left' className="bottom-logo">
                 <img 
                     src={logo}
                     alt="" 
@@ -58,7 +67,7 @@ function Footer(){
                 <p className="footer-text-2">All rights reserved.</p>
             </div>
 
-            <div className="bottom-links flex flex-wrap justify-around">
+            <div data-aos='fade-up' className="bottom-links flex flex-wrap justify-around">
                 <ul className="grid ">
                     <li>
                         Company
@@ -80,7 +89,7 @@ function Footer(){
                         </li>
                     ))}
                 </ul> */}
-                <ul className="grid">
+                <ul data-aos='fade-up' className="grid">
                     <li>
                         Contact Information
                     </li>
