@@ -60,3 +60,62 @@ export const articles = [
     },
 ]
 
+
+
+export const nav_links = [
+    {
+        id: 0,
+        name: 'about',
+        path: '#about',
+    },
+    {
+        id: 1,
+        name: 'services',
+        path: '#services',
+    }, 
+    {
+        id: 3,
+        name: 'reviews',
+        path: '#reviews',
+    },
+    {
+        id: 4,
+        name: 'products',
+        path: '/products',
+    },
+    {
+        id: 5,
+        name: 'contact us',
+        path: '/contact-us',
+    }
+]
+
+
+
+export const reviews = [
+    {
+        userName: "Mikasa Ackerman",
+        userImg: author1,
+        reviewText: 'Lorem ipsum dolor sit amet consectetur. Diam semper odio consectetur faucibus tristique nec vitae volutpat volutpat.',
+        rating: 4.8
+    },
+    {
+        userName: "Eren Yaeger",
+        userImg: author2,
+        reviewText: 'Lorem ipsum dolor sit amet consectetur. Risus morbi ultrices sit hac condimentum adipiscing. Risus auctor.',
+        rating: 4.8
+    },
+    {
+        userName: "Joe Michealson",
+        userImg: author1,
+        reviewText: 'Lorem ipsum dolor sit amet consectetur. Diam semper odio consectetur faucibus tristique nec vitae volutpat volutpat.',
+        rating: 4.8
+    },
+    {
+        userName: "Kun Aguero",
+        userImg: author3,
+        reviewText: 'Lorem ipsum dolor sit amet consectetur. Risus morbi ultrices sit hac condimentum adipiscing. Risus auctor.',
+        rating: 4.8
+    },
+]
+

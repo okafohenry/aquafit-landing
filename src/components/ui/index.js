@@ -1,13 +1,15 @@
 import Navbar from "./Navbar";
 import Jumbotron from "./Jumbotron";
-import LatestNews from "./LatestNews";
+import Services from "./Services";
 import ContactUs from "./ContactUs";
 import Footer from "./Footer";
+import Reviews from "./Reviews";
 
 export {
     Navbar,
     Jumbotron,
-    LatestNews,
     ContactUs,
+    Services,
+    Reviews,
     Footer,
 }

@@ -5,15 +5,15 @@ export default function NewsCard(data){
     return(
         <div className="news-card">
             <img src={headerImg} alt="" />
-            <div className="flex gap-x-1 category">
+            {/* <div className="flex gap-x-1 category">
                 <p className="text-1">{category}</p>
                 <p className="text-2">{date}</p>
-            </div>
+            </div> */}
             <p className="main-text">{mainText}</p>
-            <div className="flex author gap-x-3 items-center">
+            {/* <div className="flex author gap-x-3 items-center">
                 <img src={authorImg} alt="" />
                 <p>{authorName}</p>
-            </div>
+            </div> */}
         </div>
     )
 }

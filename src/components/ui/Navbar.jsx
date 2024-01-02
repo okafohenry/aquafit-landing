@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import logo from "../../assets/imgs/Logo.svg";
-import hamburger from "../../assets/imgs/hamburger.png"
-import closeMenu from "../../assets/imgs/close.png"
+import hamburger from "../../assets/imgs/hamburger.svg"
+import closeMenu from "../../assets/imgs/close.svg"
 import MobileNavbar from "./MobileNavbar";
+import { nav_links } from "../../utils/constants";
 
 
 function Navbar(){
@@ -14,24 +15,20 @@ function Navbar(){
             <nav className="w-full flex justify-between items-center">
                 <div className="logo">
                     <a href="#">
-                        <img src={logo} alt="logo"  height="37px" width="156px" />
+                        <img src={logo} alt="logo"  height="37px" width="200px" />
                     </a>
                 </div>
                 <div className="nav-links flex items-center">
                     <ul className="list-none flex">
-                        <li>
-                            <a href="">Product</a>
-                        </li>
-                        <li>
-                            <a href="">Services</a>
-                        </li>
-                        <li>
-                            <a href="">About</a>
-                        </li>
+                        { nav_links.map((nav_item) => (
+                            <li className="capitalize px-3" key={nav_item.id}>
+                                <a href={nav_item.path}>{nav_item.name}</a>
+                            </li>
+                        ))}
                     </ul>
-                    <div className="login-btn">
+                    {/* <div className="login-btn">
                         <a href="">Log In</a>
-                    </div>
+                    </div> */}
                 </div>
                {!toggle ?
                 <div 

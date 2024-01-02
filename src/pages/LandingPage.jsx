@@ -1,5 +1,6 @@
 import React from "react";
-import { ContactUs, Footer, Jumbotron, LatestNews, Navbar } from "../components/ui";
+import { ContactUs, Footer, Jumbotron,  Navbar, Reviews, Services } from "../components/ui";
+import AboutUs from "../components/ui/AboutUs";
 
 function LandingPage() {
     return (
@@ -7,7 +8,9 @@ function LandingPage() {
             <main>
                 <Navbar />
                 <Jumbotron />
-                <LatestNews/>
+                <AboutUs />
+                <Services />
+                <Reviews />
                 <ContactUs />
             </main>
             <Footer />
